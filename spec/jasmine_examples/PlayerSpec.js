@@ -1,8 +1,9 @@
+import Player from "../../lib/jasmine_examples/Player";
+import Song from "../../lib/jasmine_examples/Song";
+
 describe("Player", function() {
-  var Player = require('../../lib/jasmine_examples/Player');
-  var Song = require('../../lib/jasmine_examples/Song');
-  var player;
-  var song;
+  let player;
+  let song;
 
   beforeEach(function() {
     player = new Player();
@@ -39,7 +40,7 @@ describe("Player", function() {
 
   // demonstrates use of spies to intercept and test method calls
   it("tells the current song if the user has made it a favorite", function() {
-    spyOn(song, 'persistFavoriteStatus');
+    spyOn(song, "persistFavoriteStatus");
 
     player.play(song);
     player.makeFavorite();
