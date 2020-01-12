@@ -4,8 +4,11 @@
   "description": "practice test with Jasmine",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine --config=spec/support/jasmine.json"
   },
   "author": "jeongho heo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jasmine": "^3.5.0"
+  }
 }
