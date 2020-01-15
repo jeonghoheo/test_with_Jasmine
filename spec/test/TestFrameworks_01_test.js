@@ -30,6 +30,6 @@ describe("createReservation(passenger, flight)", () => {
     };
 
     const reservation = createReservation(testPassenger, testFlight);
-    expect(reservation.passengerInfo).toBe(testPassenger);
+    expect(reservation.flightInfo).toBe(testFlight);
   });
 });
