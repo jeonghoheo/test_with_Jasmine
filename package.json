@@ -4,6 +4,7 @@
   "description": "practice test with Jasmine",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon --exec babel-node makeClass.js",
     "test": "nodemon --exec jasmine --config=spec/support/jasmine.json"
   },
   "author": "jeongho heo",
